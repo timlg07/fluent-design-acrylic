@@ -8,7 +8,8 @@ It involves multiple layers, including:
  - Gaussian blur
  - Exclusion blend
  - Color overlay (currently only white, dark mode coming soon)
- - Tiled noise texture
+ - Tiled noise texture  
+
 As you can see in the picture, Microsoft uses the same layers in the same order:
 ![Reference](https://docs.microsoft.com/en-us/windows/uwp/design/style/images/acrylicrecipe_diagram.jpg)
 A possible result using the acrylic.css and only one <code>div</code>-container is shown below:
