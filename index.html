@@ -206,9 +206,16 @@
             popup.addEventListener("click",(e) => {
                 popup.classList.add("hidden");
             });
-            setInterval(() => {
-                popup.classList.contains("dark") ? popup.classList.remove("dark") : popup.classList.add("dark");
-            }, 5000);
+            
+            // setInterval(toggleDarkMode, 5000);
+            document.querySelector(".btn").onclick = toggleDarkMode;
+            
+            function toggleDarkMode(){
+                  popup.classList.contains("dark") 
+                ? popup.classList.remove  ("dark") 
+                : popup.classList.add     ("dark")
+                ;
+            }
         </script>
 </body>
 
