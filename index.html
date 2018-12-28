@@ -69,7 +69,7 @@
             left: 15vw;
             padding: var(--s4);
             /* overflow: hidden; */
-            /* animation-name: fadein; */
+            animation-name: fadein;
             animation-duration: 1s;
             animation-delay: 2s;
             animation-fill-mode: both;
@@ -116,9 +116,9 @@
         .acrylic.dark::before {
             background-color: rgba(24, 24, 24, 0.658);
             background-color: #181818a8;
-            
-            
         }
+        
+        
         .acrylic .btn {
             display: inline-block;
             position: absolute;
@@ -216,6 +216,22 @@
                 : popup.classList.add     ("dark")
                 ;
             }
+            
+            let images = {
+                index: 0,
+                src: 
+                [
+                    "http://c1.staticflickr.com/5/4249/35258695885_991c892612_k.jpg",
+                    "http://tim-greller.tk/fl/bg.jpg"
+                ]
+            }
+            
+            function changeImage(){
+                if( ++images.index == images.src.length ) images.index = 0;
+                document.querySelector("img").src = images.src[images.index];
+            }
+            
+            setInterval(changeImage, 5000);
         </script>
 </body>
 
