@@ -2,7 +2,7 @@
 
 
 This recreates the _Acrylic_ material which can be found throughout the Windows 10 UI.
-It involves multiple layers, including 
+It involves multiple layers, including:
  - Background
  - Saturation boost
  - Gaussian blur
